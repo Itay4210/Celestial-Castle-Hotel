@@ -27,4 +27,15 @@ function newOrder(){
             }else{
              alert("not payed");
             }
+            lastResult();
         }
+
+
+
+function lastResult(){
+    saveOrders= JSON.parse(localStorage.getItem("names"));
+    const updateData=[...saveOrders];
+    updateData.forEach(saveOrders=>{
+console.log(updateData);
+    })
+}
